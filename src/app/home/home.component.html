@@ -1,0 +1,22 @@
+
+<div *ngIf="added">
+ <p class="added">TASK HAS BEEN ADDED </p>
+</div>
+<div *ngIf="deleted">
+ <p class="deleted">TASK HAS BEEN DELETED </p>
+</div>
+<div>
+  <h2 [class.title]="title">LIST OF TASKS</h2>
+  <div>
+      <input [class]="fields" [(ngModel)]="name" placeholder="Enter Task name" type="text" ><br/>
+      <input [class]="fields" [(ngModel)]="description" placeholder="Enter Task description" type="text" ><br/>
+      <input  [class]="fields" type="submit" value="add task" (click)="add_task()">
+    <ul>
+        <li  [class.item]="item" *ngFor="let it of task; let i =index" >{{it.name}}<span (click)="delete_task(i)">x</span>
+          <br/>
+          <small (click)="show_description(i)">details </small>
+          <p *ngIf="it.display">{{it.description}}</p>
+        </li>
+    </ul>
+   </div>
+</div>

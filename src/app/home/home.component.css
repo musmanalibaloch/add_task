@@ -1,0 +1,52 @@
+.title
+{
+  color:white;
+  background-color:black;
+  width:30%;
+  text-align: center;
+  margin-left: 30%;
+  padding:20px;
+}
+.item
+{
+  margin-top: 1px;
+  color:black;
+  background-color:#f4f441;
+  width:30%;
+
+  margin-left: 28%;
+  padding:20px;
+}
+.item span
+{
+  float:right;
+}
+.desc
+{
+
+ color:red;
+ padding-left: 20px;
+ text-decoration: underline;
+ text-shadow: 5px white;
+
+}
+.added{
+
+  background-color:#42f47d;
+  position: absolute;
+  float:right;
+  color:black;
+}
+.deleted{
+
+  background-color:#f45042;
+  position: absolute;
+  float:right;
+  color:black;
+}
+.fields
+{
+
+  margin-left: 30%;
+
+}
